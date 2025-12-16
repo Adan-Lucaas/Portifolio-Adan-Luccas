@@ -167,6 +167,231 @@ h1 {
     margin-bottom: 5px;
 }
 
+/* Adicione este código ao final do seu arquivo style/style.css */
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+
+    /* Ajustes gerais de espaçamento */
+    section {
+        padding: 40px 20px;
+    }
+
+    /* Navegação */
+    .navegacao {
+        padding: 15px 0;
+    }
+
+    .menu {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Cabeçalho (Início) */
+    .cabecalho {
+        padding: 60px 20px;
+    }
+
+    .foto-perfil {
+        width: 120px; /* Diminui o tamanho da foto */
+        height: 120px;
+    }
+
+    .cabecalho h1 {
+        font-size: 2.5rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+
+    /* Seção Sobre */
+    .sobre-conteudo {
+        max-width: 100%; /* Permite que o conteúdo ocupe toda a largura */
+    }
+
+    /* Seção Projetos */
+    .projeto-caixa {
+        flex-direction: column; /* Empilha os cards de projeto */
+        gap: 30px;
+    }
+
+    .projeto-card {
+        width: 100%; /* Faz cada card ocupar a largura total */
+        max-width: 350px; /* Limita a largura máxima em telas um pouco maiores */
+        margin: 0 auto; /* Centraliza o card */
+    }
+
+    /* Seção Contato */
+    .formulario-contato {
+        width: 100%; /* O formulário ocupa toda a largura */
+        max-width: 400px;
+    }
+}
+
+/* Classe para esconder labels visualmente, mas mantê-las para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+/* Adicione este código ao final do seu arquivo style/style.css */
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+
+    /* Ajustes gerais de espaçamento */
+    section {
+        padding: 40px 20px;
+    }
+
+    /* Navegação */
+    .navegacao {
+        padding: 15px 0;
+    }
+
+    .menu {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Cabeçalho (Início) */
+    .cabecalho {
+        padding: 60px 20px;
+    }
+
+    .foto-perfil {
+        width: 120px; /* Diminui o tamanho da foto */
+        height: 120px;
+    }
+
+    .cabecalho h1 {
+        font-size: 2.5rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+
+    /* Seção Sobre */
+    .sobre-conteudo {
+        max-width: 100%; /* Permite que o conteúdo ocupe toda a largura */
+    }
+
+    /* Seção Projetos */
+    .projeto-caixa {
+        flex-direction: column; /* Empilha os cards de projeto */
+        gap: 30px;
+    }
+
+    .projeto-card {
+        width: 100%; /* Faz cada card ocupar a largura total */
+        max-width: 350px; /* Limita a largura máxima em telas um pouco maiores */
+        margin: 0 auto; /* Centraliza o card */
+    }
+
+    /* Seção Contato */
+    .formulario-contato {
+        width: 100%; /* O formulário ocupa toda a largura */
+        max-width: 400px;
+    }
+}
+
+/* Classe para esconder labels visualmente, mas mantê-las para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+/* Adicione este código ao final do seu arquivo style/style.css */
+
+/* Estilos para telas menores (celulares) */
+@media (max-width: 768px) {
+
+    /* Ajustes gerais de espaçamento */
+    section {
+        padding: 40px 20px;
+    }
+
+    /* Navegação */
+    .navegacao {
+        padding: 15px 0;
+    }
+
+    .menu {
+        flex-direction: column; /* Coloca os itens do menu em coluna */
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Cabeçalho (Início) */
+    .cabecalho {
+        padding: 60px 20px;
+    }
+
+    .foto-perfil {
+        width: 120px; /* Diminui o tamanho da foto */
+        height: 120px;
+    }
+
+    .cabecalho h1 {
+        font-size: 2.5rem; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte do subtítulo */
+    }
+
+    /* Seção Sobre */
+    .sobre-conteudo {
+        max-width: 100%; /* Permite que o conteúdo ocupe toda a largura */
+    }
+
+    /* Seção Projetos */
+    .projeto-caixa {
+        flex-direction: column; /* Empilha os cards de projeto */
+        gap: 30px;
+    }
+
+    .projeto-card {
+        width: 100%; /* Faz cada card ocupar a largura total */
+        max-width: 350px; /* Limita a largura máxima em telas um pouco maiores */
+        margin: 0 auto; /* Centraliza o card */
+    }
+
+    /* Seção Contato */
+    .formulario-contato {
+        width: 100%; /* O formulário ocupa toda a largura */
+        max-width: 400px;
+    }
+}
+
+/* Classe para esconder labels visualmente, mas mantê-las para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 
 .caixa-texto-projeto {
     padding: 1.5rem;
