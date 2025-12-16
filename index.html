@@ -23,7 +23,7 @@
             </li>
 
             <li>
-                <a href="#projetos" class="menu-link">Porjetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
 
             <li>
@@ -90,7 +90,7 @@
                 <a href="https://projeto-login-one-theta.vercel.app/" target="_blank">
                     <img src="image/login.png" alt="Projeto 3" class="projeto-imagem">
                     <div class="caixa-texto-projeto">
-                        <h3 class="info-projetos">projeto login</h3>
+                        <h3 class="info-projeto">projeto login</h3>
                         <p class="paragrafo-projeto">Campo de login simples com campos de Nome de Usuario, Senha,
                             Lembrar-me, Esqueci a senha, Entrar e registrar-se</p>
                     </div>
@@ -109,7 +109,7 @@
             </div>
 
             <div class="projeto-card">
-                <a href="hhttps://landing-page-advocacia-azure.vercel.app/" target="_blank">
+                <a href="https://landing-page-advocacia-azure.vercel.app/" target="_blank">
                     <img src="image/advocacia.png" alt="Projeto 5" class="projeto-imagem">
                     <div class="caixa-texto-projeto">
                         <h3 class="info-projeto">Landing Page de Advocacia</h3>
@@ -127,18 +127,22 @@
         <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
 
             <div class="grupo-form">
-                <input placeholder="Digite seu Nome" class="campo-form" id="Nome">
+                <label for="Nome" class="sr-only">Seu Nome</label>
+                <input type="text" placeholder="Digite seu Nome" class="campo-form" id="Nome" required>
             </div>
 
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+                <label for="mensagem" class="sr-only">Sua Mensagem</label>
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem" required></textarea>
             </div>
             <button type="submit" class="botao-form">Enviar Whatsapp</button>
         </form>
     </section>
 
+    <!-- O script foi movido para o final do body -->
     <script>
         function enviarWhats(event) {
+            // Previne o comportamento padrão do formulário
             event.preventDefault();
 
             const nome = document.getElementById('Nome').value;
@@ -146,9 +150,10 @@
             const telefone = '5511965077486';
 
             // Validação para garantir que os campos não estão vazios
+            // O atributo 'required' nos inputs já faz uma validação inicial
             if (nome.trim() === '' || mensagem.trim() === '') {
                 alert('Por favor, preencha seu nome e a mensagem.');
-                return; // Impede o envio do formulário
+                return;
             }
 
             const texto = `Olá, Me chamo ${nome}, ${mensagem}`;
@@ -160,18 +165,15 @@
             window.open(url, '_blank');
         }
     </script>
-</body>
 
+    <footer>
+        <p>Desenvolvido por Império Code | <a href="https://www.github.com/Adan-Lucaas" target="_blank">GitHub</a> | <a
+                href="https://www.linkedin.com/in/lucas-souza-7b58b9298/" target="_blank">LinkedIn</a></p>
+        <p>© 2025 Império Code. Todos os direitos reservados.</p>
+    </footer>
 
-<footer>
-    <p>Desenvolvido por Império Code | <a href="https://www.github.com/Adan-Lucaas" target="_blank">GitHub</a> | <a
-            href="https://www.linkedin.com/in/lucas-souza-7b58b9298/" target="_blank">LinkedIn</a></p>
-    <p>© 2025 Império Code. Todos os direitos reservados.</p>
-</footer>
-
-
-<!-- Link para o arquivo JavaScript externo -->
-<script src="script/script.js"></script>
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script/script.js"></script>
 
 </body>
 
